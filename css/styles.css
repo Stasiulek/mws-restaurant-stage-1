@@ -86,6 +86,10 @@ nav h1 a {
     display: inline;
 }
 
+#breadcrumb li a {
+  text-decoration: underline !important;
+}
+
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
     padding: 8px;
@@ -310,6 +314,10 @@ nav h1 a {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   text-align: left;
+}
+
+#restaurant-hours {
+ margin-bottom: 1rem;
 }
 
 
