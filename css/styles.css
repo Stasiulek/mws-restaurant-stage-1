@@ -77,6 +77,7 @@ nav h1 a {
     background-color: #eee;
     /* font-size: 17px; */
     margin: 0;
+    text-align: left;
     /* width: calc(50% - 80px); */
 }
 
@@ -111,17 +112,18 @@ nav h1 a {
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background-color: #3397DB;
   align-items: center;
+  margin: 0;
+  padding: 0.5rem;
 }
 .filter-options h2 {
   color: white;
   font-size: 1rem;
   font-weight: normal;
-  line-height: 1;
-  /* margin: 0 20px; */
+  margin: 0;
 }
 .filter-options select {
   background-color: white;
@@ -196,19 +198,29 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+
+.inside {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  text-align: center;
+}
+
 .inside header {
-  position: fixed;
+  /* position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000; */
 }
 .inside #map-container {
-  background: blue none repeat scroll 0 0;
+  /* background: blue none repeat scroll 0 0;
   height: 87%;
   position: fixed;
   right: 0;
   top: 80px;
-  width: 50%;
+  width: 50%; */
+  height: 400px;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
@@ -216,9 +228,9 @@ nav h1 a {
   width: 100%;
 }
 .inside #footer {
-  bottom: 0;
+  /* bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 50%; */
 }
 #restaurant-name {
   color: #f18200;
@@ -231,7 +243,7 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	/* width: 90%; */
+	width: 100%;
 }
 #restaurant-address {
   /* font-size: 12pt;
@@ -252,11 +264,13 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
+  text-align: center;
+  color: red;
   /* padding: 140px 40px 30px;
   width: 50%; */
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  /* padding: 30px 40px 80px; */
 }
 #reviews-container h2 {
   color: #f58500;
@@ -279,12 +293,23 @@ nav h1 a {
   padding: 0 20px 20px;
   position: relative;
   width: 85%;
+  margin-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 #reviews-list li p {
   margin: 0 0 10px;
 }
+
+#reviews-list li p:last-child {
+  text-align: left;
+}
+
 #restaurant-hours td {
   color: #666;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  text-align: left;
 }
 
 
