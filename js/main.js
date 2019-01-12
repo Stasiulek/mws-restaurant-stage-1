@@ -5,7 +5,6 @@ var newMap
 var markers = []
 
 if ('serviceWorker' in navigator) {
-
   navigator.serviceWorker
     .register('./register_sw.js', { scope: './' })
     .then(function(registration) {
@@ -14,9 +13,7 @@ if ('serviceWorker' in navigator) {
     .catch(function(err) {
       console.log("Service Worker failed to register", err);
     })
-
 }
-
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -175,6 +172,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = restaurant.alt;
   li.append(image);
 
   const name = document.createElement('h1');
@@ -192,6 +190,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.tabIndex = '4';
   li.append(more)
 
   return li
