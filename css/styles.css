@@ -166,15 +166,29 @@ nav h1 a {
   width: 80%;
   /* max-width: 480px; */
 }
+
+@media all and (min-width: 768px) { 
+  #restaurants-list li {
+    width: 100%;
+    max-width: 480px;
+  }
+}
+
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   margin: 0;
   max-width: 100%;
-  /* min-height: 248px; */
+  min-height: 248px;
   min-width: 100%;
-  /* max-width: 480px; */
 }
+
+/* @media all and (min-width: 992px) { 
+    #restaurants-list .restaurant-img {
+      max-width: 480px;
+    }
+} */
+
 #restaurants-list li h1 {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -227,6 +241,14 @@ nav h1 a {
   height: 400px;
   width: 100%;
 }
+/* @media (min-width: 992px) {
+  .inside #map-container {
+    height: 300px;
+    width: 100%;
+  }
+} */
+
+
 .inside #map {
   background-color: #ccc;
   height: 100%;
@@ -248,13 +270,16 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-  width: 100%;
-  max-width: 480px;
+  width: 90%;
 }
-#restaurant-address {
-  /* font-size: 12pt;
-  margin: 10px 0px; */
+@media all and (min-width: 768px) { 
+  #restaurant-img {
+    max-width: 480px;
+  }
 }
+/* #restaurant-address {
+} */
+
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
@@ -265,8 +290,8 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	/* width: 90%; */
 }
+
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
@@ -278,6 +303,7 @@ nav h1 a {
 #reviews-container {
   /* padding: 30px 40px 80px; */
 }
+
 #reviews-container h2 {
   color: #f58500;
   /* font-size: 24pt; */
@@ -285,10 +311,12 @@ nav h1 a {
   /* letter-spacing: -1px;
   padding-bottom: 1pt; */
 }
+
 #reviews-list {
   margin: 0;
   padding: 0;
 }
+
 #reviews-list li {
   background-color: #fff;
   border: 2px solid #f3f3f3;
@@ -303,6 +331,7 @@ nav h1 a {
   margin-right: auto;
   margin-left: auto;
 }
+
 #reviews-list li p {
   margin: 0 0 10px;
 }
@@ -321,7 +350,6 @@ nav h1 a {
 #restaurant-hours {
  margin-bottom: 1rem;
 }
-
 
 /* Responsive breakpoints */
 /* @media all and (min-width: 480px) { ... }
