@@ -164,16 +164,16 @@ nav h1 a {
   text-align: left;
   /* width: 270px; */
   width: 80%;
-  max-width: 480px;
+  /* max-width: 480px; */
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
+  /* min-height: 248px; */
   min-width: 100%;
-  max-width: 480px;
+  /* max-width: 480px; */
 }
 #restaurants-list li h1 {
   color: #f18200;
